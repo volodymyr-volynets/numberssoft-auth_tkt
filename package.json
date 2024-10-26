@@ -1,6 +1,6 @@
 {
-  "name": "numberssoft-auth_tkt",
-  "version": "1.0.0",
+  "name": "@numberssoft/auth_tkt",
+  "version": "1.0.1",
   "description": "AuthTkt JavaScript/Node implementation.",
   "main": "index.js",
   "scripts": {
