@@ -1,5 +1,7 @@
-var assert = require('assert');
-const AuthTkt = require('../src/index.js');
+import AuthTkt from '../src/index.mjs';
+import assert from 'assert';
+import { decode } from 'urlencode';
+
 describe('AuthTkt', function () {
   it('Create new token and then validate', function () {
     const auth_tkt = new AuthTkt();
@@ -9,7 +11,6 @@ describe('AuthTkt', function () {
     const token = auth_tkt.tokenCreate(3, 'test_token', {"user_id": 200});
     //console.log('Token:', token);
     assert.notEqual(token, null);
-    const decode = require('urlencode').decode;
     const validated = auth_tkt.tokenValidate(decode(token));
     //console.log('Validated:', validated);
     assert.notEqual(validated, false);

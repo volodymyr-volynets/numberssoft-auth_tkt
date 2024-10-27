@@ -2,7 +2,8 @@
   "name": "@numberssoft/auth_tkt",
   "version": "1.0.1",
   "description": "AuthTkt JavaScript/Node implementation.",
-  "main": "index.js",
+  "main": "index.cjs",
+  "type": "module",
   "scripts": {
     "test": "mocha"
   },
